@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import { DefaultLayout } from "../layouts";
 
 const publicRoutes = [
-    { path: configRoutes.home, component: Home, layout: DefaultLayout },
+    { path: configRoutes.home, component: Home, layout: DefaultLayout }
 ];
 
 const privateRoutes = [];

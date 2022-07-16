@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { init, dispose } from "klinecharts";
 import { generatedDataList } from "../../utils/DataList";
 
-export default function Chart() {
+function Chart() {
     useEffect(() => {
         // Init chart
         const chart = init("simple_chart");
@@ -12,6 +12,7 @@ export default function Chart() {
         chart.createTechnicalIndicator("VOL");
         // Fill data
         chart.applyNewData(generatedDataList);
+        
         return () => {
             dispose("simple_chart");
         };
@@ -19,3 +20,5 @@ export default function Chart() {
 
     return <div id="simple_chart" style={{ height: 600 }} />;
 }
+
+export default Chart;
