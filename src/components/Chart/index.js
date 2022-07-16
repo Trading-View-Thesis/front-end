@@ -18,7 +18,7 @@ function Chart() {
         };
     }, []);
 
-    return <div id="simple_chart" style={{ height: 600 }} />;
+    return <div id="simple_chart" style={{ height: 600, width: 2048}} />;
 }
 
 export default Chart;
