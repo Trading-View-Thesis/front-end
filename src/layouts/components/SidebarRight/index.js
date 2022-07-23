@@ -1,7 +1,7 @@
+
+
 function SidebarRight() {
-    return ( 
-        <p>Sidebar Right</p>
-     );
+    return <div>Sidebar Right</div>;
 }
 
 export default SidebarRight;

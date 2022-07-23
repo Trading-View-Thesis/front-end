@@ -1,10 +1,43 @@
 .wrapper {
+    display: flex;
     flex: 1;
     flex-direction: column;
+    height: 100vh;
+    background-color: rgba(238,237,237,0.56);
+}
+
+.top-bar{
+    display: block;
+    height: 48px;
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid #ebedf1;
+    background-color: #fff;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     flex: 1;
+}
+
+.sidebar-left{
+    width: 52px;
+    border: 1px solid #ebedf1;
+    margin: 2px;
+    background-color: #fff;
+}   
+
+.content{
+    flex: 1;
+    border: 1px solid #ebedf1;
+    margin: 2px;
+    background-color: #fff;
+}
+
+.sidebar-right{
+    width: 240px;
+    border: 1px solid #ebedf1;
+    margin: 2px;
+    background-color: #fff;
 }
